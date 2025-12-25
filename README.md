@@ -22,14 +22,14 @@
 
 ## Key Features
 
-#### Race Mode (Grid View)
+### Race Mode (Grid View)
 Run up to 16 algorithms concurrently on a 4x4 grid to compare efficiency visually. 
 
 <div align="center">
   <img src="assets/demo_all.gif" width="85%">
 </div>
 
-#### Auditory Feedback Engine
+### Auditory Feedback Engine
 Uses `NumPy` to generate procedural sine waves. 
 The pitch corresponds to the element's value; sorted arrays "sing," while random arrays sound like static.
 
@@ -42,7 +42,7 @@ Built-in "Cheat Sheet" pop-up detailing Time/Space Complexity, Stability, and Us
 
 AlgoRacer offers granular control over the visualization environment.
 
-#### 1. Dynamic Speed Control
+### 1. Dynamic Speed Control
 Adjust execution speed in real-time using exponential scaling. 
 This allows you to slow down for critical swaps or speed up to finish long runs.
 * **Keys:** `+` (Increase) / `-` (Decrease)
@@ -51,7 +51,7 @@ This allows you to slow down for critical swaps or speed up to finish long runs.
   <img src="assets/demo_speed.gif" width="85%">
 </div>
 
-#### 2. Array Size Manipulation
+### 2. Array Size Manipulation
 Dynamically resize the dataset. 
 Use modifiers to jump between fine-tuning and massive stress testing.
 * **Fine Tune:** `Arrow Keys` (±10)
@@ -62,7 +62,7 @@ Use modifiers to jump between fine-tuning and massive stress testing.
   <img src="assets/demo_size.gif" width="85%">
 </div>
 
-#### 3. General Management
+### 3. General Management
 Full control over the simulation state including themes, audio, and resetting.
 * **Space:** Start/Pause
 * **R:** Reset
@@ -78,7 +78,7 @@ Full control over the simulation state including themes, audio, and resetting.
 
 ## Installation & Usage
 
-#### Option A: Quick Start (No Install Required)
+### Option A: Quick Start (No Install Required)
 The easiest way to try AlgoRacer is to download the standalone executable. 
 You do **not** need Python installed.
 
@@ -86,7 +86,7 @@ You do **not** need Python installed.
 2.  Download the latest `AlgoRacer.exe`.
 3.  Double-click the file to launch the visualizer immediately.
 
-#### Option B: Run from Source (For Developers)
+### Option B: Run from Source (For Developers)
 If you want to modify the code or run it raw:
 
 1.  **Clone the Repository**
@@ -128,7 +128,7 @@ If you want to modify the code or run it raw:
 
 ## Engineering Highlights
 
-#### 1. Coroutine-Based State Management
+### 1. Coroutine-Based State Management
 Instead of blocking the main thread, all sorting algorithms are implemented as Python **Generators** (`yield`).
 * This allows the `Pygame` event loop to remain responsive (60 FPS) while the algorithm "pauses" execution to let the screen draw.
 
@@ -142,7 +142,7 @@ def bubble_sort(arr):
 
 ```
 
-#### 2. Procedural Sound Generation
+### 2. Procedural Sound Generation
 
 Avoid loading hundreds of `.wav` files by synthesizing audio on the fly using `NumPy` to ensures low memory usage & infinite pitch granularity.
 
