@@ -2,7 +2,6 @@ import random
 from typing import List
 
 class SortingAlgorithms:
-    # --- Helper ---
     @staticmethod
     def _merge(arr, left, mid, right, state):
         left_copy = arr[left:mid + 1]
@@ -136,7 +135,6 @@ class SortingAlgorithms:
             yield from SortingAlgorithms._merge_sort_recursive(arr, mid + 1, right, state)
             yield from SortingAlgorithms._merge(arr, left, mid, right, state)
 
-    # --- Public Algorithms ---
 
     @staticmethod
     def bubble_sort(arr, state):

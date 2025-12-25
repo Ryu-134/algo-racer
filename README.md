@@ -1,50 +1,62 @@
-# ⚡ AlgoRacer: Advanced Sorting Visualizer
+<div align="center">
+  <img src="assets/logo.png">
+  
+  <p>
+    <img src="https://img.shields.io/badge/Python-3.9%2B-blue" alt="Python">
+    <img src="https://img.shields.io/badge/Pygame-2.5-green" alt="Pygame">
+    <img src="https://img.shields.io/badge/NumPy-Sound_Engine-orange" alt="NumPy">
+    <img src="https://img.shields.io/badge/License-MIT-lightgrey" alt="License">
+  </p>
+  
+  <h3><b>Advanced Sorting Visualizer: Comparative Benchmarking & Auditory Feedback</b></h3>
+</div>
 
-![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
-![Pygame](https://img.shields.io/badge/Pygame-2.5-green)
-![NumPy](https://img.shields.io/badge/NumPy-Sound_Engine-orange)
-![License](https://img.shields.io/badge/License-MIT-lightgrey)
+<br>
+**AlgoRacer** is an interactive, multi-sensory educational tool designed to demystify sorting algorithms. 
 
-**AlgoRacer** is an interactive, multi-sensory educational tool designed to demystify sorting algorithms. Unlike standard visualizers, this project focuses on **comparative benchmarking**, **auditory feedback**, and **software architecture**, bridging the gap between theoretical CS concepts and real-time visualization.
+---
 
 ![Intro Demo](assets/demo_intro.gif)
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
-### 🏁 Race Mode (Grid View)
-Run up to 16 algorithms concurrently on a 4x4 grid to compare efficiency visually. This highlights the massive performance difference between $O(n^2)$ and $O(n \log n)$ algorithms in real-time.
+#### Race Mode (Grid View)
+Run up to 16 algorithms concurrently on a 4x4 grid to compare efficiency visually. 
 
 ![Race Mode Demo](assets/demo_all.gif)
 
-### 🔊 Auditory Feedback Engine
-Uses `NumPy` to generate procedural sine waves. The pitch corresponds to the element's value—sorted arrays "sing," while random arrays sound like static.
+#### Auditory Feedback Engine
+Uses `NumPy` to generate procedural sine waves. 
+The pitch corresponds to the element's value—sorted arrays "sing," while random arrays sound like static.
 
-### 📚 Educational Overlay
+#### Educational Overlay
 Built-in "Cheat Sheet" pop-up detailing Time/Space Complexity, Stability, and Use Cases for every algorithm.
 
 ---
 
-## 🎮 Interactive Controls
+## Interactive Controls
 
 AlgoRacer offers granular control over the visualization environment.
 
-### 1. Dynamic Speed Control
-Adjust execution speed in real-time using exponential scaling. This allows you to slow down for critical swaps or speed up to finish long runs.
+#### 1. Dynamic Speed Control
+Adjust execution speed in real-time using exponential scaling. 
+This allows you to slow down for critical swaps or speed up to finish long runs.
 * **Keys:** `+` (Increase) / `-` (Decrease)
 
 ![Speed Control Demo](assets/demo_speed.gif)
 
-### 2. Array Size Manipulation
-Dynamically resize the dataset. Use modifiers to jump between fine-tuning and massive stress testing.
+#### 2. Array Size Manipulation
+Dynamically resize the dataset. 
+Use modifiers to jump between fine-tuning and massive stress testing.
 * **Fine Tune:** `Arrow Keys` (±10)
 * **Fast Tune:** `Shift + Arrows` (±100)
 * **Turbo Tune:** `Ctrl + Arrows` (±1000)
 
 ![Size Control Demo](assets/demo_size.gif)
 
-### 3. General Management
+#### 3. General Management
 Full control over the simulation state including themes, audio, and resetting.
 * **Space:** Start/Pause
 * **R:** Reset
@@ -56,16 +68,17 @@ Full control over the simulation state including themes, audio, and resetting.
 
 ---
 
-## 🛠️ Installation & Usage
+## Installation & Usage
 
-### Option A: 🚀 Quick Start (No Install Required)
-The easiest way to try AlgoRacer is to download the standalone executable. You do **not** need Python installed.
+#### Option A: Quick Start (No Install Required)
+The easiest way to try AlgoRacer is to download the standalone executable. 
+You do **not** need Python installed.
 
 1.  Navigate to the **[Releases](../../releases)** section on the right sidebar of this repository.
-2.  Download the latest `AlgoRacer.exe` (Windows) or `AlgoRacer.app` (Mac).
+2.  Download the latest `AlgoRacer.exe`.
 3.  Double-click the file to launch the visualizer immediately.
 
-### Option B: 🐍 Run from Source (For Developers)
+#### Option B: Run from Source (For Developers)
 If you want to modify the code or run it raw:
 
 1.  **Clone the Repository**
@@ -87,7 +100,7 @@ If you want to modify the code or run it raw:
 
 ---
 
-## ⌨️ Master Keybindings Reference
+## Master Keybindings Reference
 
 | Key | Action |
 | :--- | :--- |
@@ -105,12 +118,11 @@ If you want to modify the code or run it raw:
 
 ---
 
-## 🧠 Engineering Highlights
+## Engineering Highlights
 
-### 1. Coroutine-Based State Management
+#### 1. Coroutine-Based State Management
 Instead of blocking the main thread, all sorting algorithms are implemented as Python **Generators** (`yield`).
-* **Why?** This allows the `Pygame` event loop to remain responsive (60 FPS) while the algorithm "pauses" execution to let the screen draw.
-* **Result:** Smooth, interruptible animations without multithreading complexity.
+* This allows the `Pygame` event loop to remain responsive (60 FPS) while the algorithm "pauses" execution to let the screen draw.
 
 ```python
 # Example of Generator Pattern
@@ -122,13 +134,14 @@ def bubble_sort(arr):
 
 ```
 
-### 2. Procedural Sound Generation
+#### 2. Procedural Sound Generation
 
-We avoid loading hundreds of `.wav` files by synthesizing audio on the fly using `NumPy`. This ensures low memory usage and infinite pitch granularity.
+Avoid loading hundreds of `.wav` files by synthesizing audio on the fly using `NumPy`. 
+This ensures low memory usage and infinite pitch granularity.
 
 ---
 
-## 📚 Algorithms Included
+## Algorithms Included
 
 This project includes a comprehensive suite of algorithms to demonstrate various complexity classes:
 
@@ -153,7 +166,7 @@ This project includes a comprehensive suite of algorithms to demonstrate various
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 AlgoRacer/

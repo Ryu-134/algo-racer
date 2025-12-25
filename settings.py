@@ -1,16 +1,12 @@
-# settings.py
 
-# --- Configuration ---
 FPS = 60
 HEADER_ZONE = 115 
 
-# --- Global Colors ---
 BACKGROUND_COLOR = (24, 29, 39)
 WHITE = (255, 255, 255)
 UI_BACKGROUND_COLOR = (44, 51, 64)
 TEXT_COLOR = (200, 200, 200)
 
-# Colors for UI Elements
 OVERLAY_COLOR = (0, 0, 0, 200) 
 INFO_BG_COLOR = (30, 35, 45)
 INFO_HEADER_COLOR = (60, 70, 90)
@@ -26,7 +22,6 @@ MUTE_COLOR = (200, 60, 60)
 MUTE_HOVER_COLOR = (240, 100, 100)
 FINISH_COLOR = (0, 200, 80)
 
-# --- Color Themes ---
 THEMES = {
     "dark": {
         "bg": (24, 29, 39),
@@ -52,7 +47,6 @@ THEMES = {
     }
 }
 
-# --- Algorithm Educational Data ---
 ALGO_INFO = {
     "Bubble Sort":      ["O(n)", "O(n^2)", "O(n^2)", "O(1)", "Yes", "Teaching & small datasets"],
     "Cocktail Shaker":  ["O(n)", "O(n^2)", "O(n^2)", "O(1)", "Yes", "Slightly faster Bubble Sort"],

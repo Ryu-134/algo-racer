@@ -1,4 +1,3 @@
-# visualizer.py
 import pygame
 import random
 import math
@@ -57,31 +56,26 @@ class SorterVisualizer:
         self.theme_name = "dark"
         self.colors = THEMES[self.theme_name]
         
-# --- Algorithm Registry (Ordered by Relevance) ---
         self.algo_map = {
-            # Row 1: The "Big Standards" (Textbook & Real-World Usage)
-            "Bubble Sort": SortingAlgorithms.bubble_sort,       # The "Hello World" of sorting
-            "Insertion Sort": SortingAlgorithms.insertion_sort, # Essential for small arrays
-            "Selection Sort": SortingAlgorithms.selection_sort, # Classic O(n^2)
-            "Merge Sort": SortingAlgorithms.merge_sort,         # Classic O(n log n)
+            "Bubble Sort": SortingAlgorithms.bubble_sort,       
+            "Insertion Sort": SortingAlgorithms.insertion_sort, 
+            "Selection Sort": SortingAlgorithms.selection_sort, 
+            "Merge Sort": SortingAlgorithms.merge_sort,         
 
-            # Row 2: Efficient & Practical
-            "Quick Sort": SortingAlgorithms.quick_sort,         # The speed standard
-            "Heap Sort": SortingAlgorithms.heap_sort,           # Systems standard
-            "Tim Sort": SortingAlgorithms.tim_sort,              # Python/Java default (Very important)
-            "Shell Sort": SortingAlgorithms.shell_sort,         # Historic optimization
+            "Quick Sort": SortingAlgorithms.quick_sort,         
+            "Heap Sort": SortingAlgorithms.heap_sort,           
+            "Tim Sort": SortingAlgorithms.tim_sort,              
+            "Shell Sort": SortingAlgorithms.shell_sort,         
 
-            # Row 3: Distribution Sorts & Bubble Variants
-            "Counting Sort": SortingAlgorithms.counting_sort,   # O(n) integer sort
-            "Radix Sort": SortingAlgorithms.radix_sort,         # Digit-based sort
-            "Bucket Sort": SortingAlgorithms.bucket_sort,       # Distribution sort
-            "Cocktail Shaker": SortingAlgorithms.cocktail_shaker_sort, # Bi-directional Bubble
+            "Counting Sort": SortingAlgorithms.counting_sort,   
+            "Radix Sort": SortingAlgorithms.radix_sort,         
+            "Bucket Sort": SortingAlgorithms.bucket_sort,       
+            "Cocktail Shaker": SortingAlgorithms.cocktail_shaker_sort, 
 
-            # Row 4: Educational & Esoteric (Rarely used in production)
-            "Comb Sort": SortingAlgorithms.comb_sort,           # Gap-based Bubble
-            "Gnome Sort": SortingAlgorithms.gnome_sort,         # "Stupid" Insertion Sort
-            "Odd-Even Sort": SortingAlgorithms.odd_even_sort,   # Parallel concept
-            "Stooge Sort": SortingAlgorithms.stooge_sort,       # Intentionally slow (O(n^2.7))
+            "Comb Sort": SortingAlgorithms.comb_sort,           
+            "Gnome Sort": SortingAlgorithms.gnome_sort,         
+            "Odd-Even Sort": SortingAlgorithms.odd_even_sort,   
+            "Stooge Sort": SortingAlgorithms.stooge_sort,       
         }
         self.algo_names = list(self.algo_map.keys())
         self.current_algo_idx = 0
@@ -183,13 +177,13 @@ class SorterVisualizer:
                             self.current_algo_idx = (self.current_algo_idx - 1) % len(self.algo_names)
                             self.rebuild_states()
                     
-                    if event.key == pygame.K_EQUALS: # '+'
+                    if event.key == pygame.K_EQUALS: 
                         if self.speed_value < 1:
                             self.speed_value += 1
                             if self.speed_value == 0: self.speed_value = 1
                         else:
                             self.speed_value = min(5000, int(self.speed_value * 1.5) + 1)
-                    elif event.key == pygame.K_MINUS: # '-'
+                    elif event.key == pygame.K_MINUS: 
                         if self.speed_value > 1:
                             self.speed_value = int(self.speed_value / 1.5)
                         else:
@@ -367,7 +361,6 @@ class SorterVisualizer:
         
         mouse_pos = pygame.mouse.get_pos()
         
-        # --- INFO BUTTON ---
         btn_w = 140
         btn_h = 40
         btn_x = self.width - 160 
@@ -380,7 +373,6 @@ class SorterVisualizer:
         btn_rect = btn_txt.get_rect(center=self.info_btn_rect.center)
         self.screen.blit(btn_txt, btn_rect)
 
-        # --- MUTE BUTTON ---
         mute_x = self.width - 310
         self.mute_btn_rect = pygame.Rect(mute_x, btn_y, btn_w, btn_h)
         
@@ -398,7 +390,6 @@ class SorterVisualizer:
         mute_rect = mute_txt.get_rect(center=self.mute_btn_rect.center)
         self.screen.blit(mute_txt, mute_rect)
 
-        # --- CONTROLS ---
         if self.speed_value > 0:
             speed_str = f"{self.speed_value} Ops/Frame"
         else:
