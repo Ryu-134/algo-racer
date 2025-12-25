@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/logo.png" width="40%"> 
+  <img src="assets/logo.png" width="45%"> 
   <br><br>
 
   <p>
@@ -15,7 +15,7 @@
 
   <br>
   
-  <img src="assets/demo_intro.gif" width="80%">
+  <img src="assets/demo_intro.gif" width="90%">
 </div>
 
 ---
@@ -26,7 +26,7 @@
 Run up to 16 algorithms concurrently on a 4x4 grid to compare efficiency visually. 
 
 <div align="center">
-  <img src="assets/demo_all.gif" width="80%">
+  <img src="assets/demo_all.gif" width="90%">
 </div>
 
 ### Auditory Feedback Engine
@@ -47,7 +47,7 @@ Adjust execution speed in real-time using exponential scaling.
 * **Keys:** `+` (Increase) / `-` (Decrease)
 
 <div align="center">
-  <img src="assets/demo_speed.gif" width="80%">
+  <img src="assets/demo_speed.gif" width="90%">
 </div>
 
 ### 2. Array Size Manipulation
@@ -57,7 +57,7 @@ Dynamically resize the dataset.
 * **Turbo Tune:** `Ctrl + Arrows` (±1000)
 
 <div align="center">
-  <img src="assets/demo_size.gif" width="80%">
+  <img src="assets/demo_size.gif" width="90%">
 </div>
 
 ### 3. General Management
@@ -69,7 +69,7 @@ Full control over the simulation state including themes, audio, and resetting.
 * **I:** Info Sheet
 
 <div align="center">
-  <img src="assets/demo_controls.gif" width="85%">
+  <img src="assets/demo_controls.gif" width="90%">
 </div>
 
 ---
