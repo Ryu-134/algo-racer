@@ -10,7 +10,7 @@
   </p>
   
   <p>
-    <b>AlgoRacer</b> is an interactive, multi-sensory educational tool designed to demystify sorting algorithms through comparative benchmarking & Auditory Feedback.
+    <b>AlgoRacer</b> is an interactive, multi-sensory educational tool designed to demystify sorting algorithms.
   </p>
 
   <br>
@@ -23,14 +23,16 @@
 ## Key Features
 
 #### Race Mode (Grid View)
-Run up to 16 algorithms concurrently on a 4x4 grid to compare efficiency visually. This highlights the massive performance difference between $O(n^2)$ and $O(n \log n)$ algorithms in real-time.
+Run up to 16 algorithms concurrently on a 4x4 grid to compare efficiency visually. 
+This highlights the massive performance difference between $O(n^2)$ and $O(n \log n)$ algorithms in real-time.
 
 <div align="center">
   <img src="assets/demo_all.gif" width="85%">
 </div>
 
 #### Auditory Feedback Engine
-Uses `NumPy` to generate procedural sine waves. The pitch corresponds to the element's value—sorted arrays "sing," while random arrays sound like static.
+Uses `NumPy` to generate procedural sine waves. 
+The pitch corresponds to the element's value—sorted arrays "sing," while random arrays sound like static.
 
 ### Educational Overlay
 Built-in "Cheat Sheet" pop-up detailing Time/Space Complexity, Stability, and Use Cases for every algorithm.
@@ -42,7 +44,8 @@ Built-in "Cheat Sheet" pop-up detailing Time/Space Complexity, Stability, and Us
 AlgoRacer offers granular control over the visualization environment.
 
 #### 1. Dynamic Speed Control
-Adjust execution speed in real-time using exponential scaling. This allows you to slow down for critical swaps or speed up to finish long runs.
+Adjust execution speed in real-time using exponential scaling. 
+This allows you to slow down for critical swaps or speed up to finish long runs.
 * **Keys:** `+` (Increase) / `-` (Decrease)
 
 <div align="center">
