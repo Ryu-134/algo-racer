@@ -7,22 +7,52 @@
 
 **AlgoRacer** is an interactive, multi-sensory educational tool designed to demystify sorting algorithms. Unlike standard visualizers, this project focuses on **comparative benchmarking**, **auditory feedback**, and **software architecture**, bridging the gap between theoretical CS concepts and real-time visualization.
 
-> **[PLACEHOLDER: Insert GIF of "Race Mode" here]**
-> *Recommendation: Record a 10s clip of the 4x4 grid running all algorithms at once.*
-> `![Race Mode Demo](assets/demo_race.gif)`
+![Intro Demo](assets/demo_intro.gif)
 
 ---
 
 ## 🚀 Key Features
 
-* **16+ Algorithms Implemented:** From standard sorts (Quick, Merge) to hybrids (Tim Sort) and educational examples (Stooge, Gnome).
-* **Auditory Feedback Engine:** Uses `NumPy` to generate procedural sine waves. The pitch corresponds to the element's value—sorted arrays "sing," while random arrays sound like static.
-* **Dual View Modes:**
-    * **Single Mode:** Focus on one algorithm to understand its behavior in detail.
-    * **Race Mode:** Run up to 16 algorithms concurrently on a 4x4 grid to compare efficiency visually.
-* **Interactive Controls:** Real-time speed adjustment (exponential scaling), pause/resume, and reverse-step capabilities.
-* **Educational Overlay:** Built-in "Cheat Sheet" pop-up detailing Time/Space Complexity, Stability, and Use Cases for every algorithm.
-* **Themes:** Toggle between **Dark Mode** (High Contrast) and **Light Mode** (Classroom/Paper style).
+### 🏁 Race Mode (Grid View)
+Run up to 16 algorithms concurrently on a 4x4 grid to compare efficiency visually. This highlights the massive performance difference between $O(n^2)$ and $O(n \log n)$ algorithms in real-time.
+
+![Race Mode Demo](assets/demo_all.gif)
+
+### 🔊 Auditory Feedback Engine
+Uses `NumPy` to generate procedural sine waves. The pitch corresponds to the element's value—sorted arrays "sing," while random arrays sound like static.
+
+### 📚 Educational Overlay
+Built-in "Cheat Sheet" pop-up detailing Time/Space Complexity, Stability, and Use Cases for every algorithm.
+
+---
+
+## 🎮 Interactive Controls
+
+AlgoRacer offers granular control over the visualization environment.
+
+### 1. Dynamic Speed Control
+Adjust execution speed in real-time using exponential scaling. This allows you to slow down for critical swaps or speed up to finish long runs.
+* **Keys:** `+` (Increase) / `-` (Decrease)
+
+![Speed Control Demo](assets/demo_speed.gif)
+
+### 2. Array Size Manipulation
+Dynamically resize the dataset. Use modifiers to jump between fine-tuning and massive stress testing.
+* **Fine Tune:** `Arrow Keys` (±10)
+* **Fast Tune:** `Shift + Arrows` (±100)
+* **Turbo Tune:** `Ctrl + Arrows` (±1000)
+
+![Size Control Demo](assets/demo_size.gif)
+
+### 3. General Management
+Full control over the simulation state including themes, audio, and resetting.
+* **Space:** Start/Pause
+* **R:** Reset
+* **T:** Toggle Theme
+* **S:** Mute/Unmute
+* **I:** Info Sheet
+
+![General Controls Demo](assets/demo_controls.gif)
 
 ---
 
@@ -35,14 +65,12 @@ The easiest way to try AlgoRacer is to download the standalone executable. You d
 2.  Download the latest `AlgoRacer.exe` (Windows) or `AlgoRacer.app` (Mac).
 3.  Double-click the file to launch the visualizer immediately.
 
----
-
 ### Option B: 🐍 Run from Source (For Developers)
 If you want to modify the code or run it raw:
 
 1.  **Clone the Repository**
     ```bash
-    git clone [https://github.com/YOUR_USERNAME/AlgoRacer.git](https://github.com/YOUR_USERNAME/AlgoRacer.git)
+    git clone [https://github.com/Ryu-134/AlgoRacer.git](https://github.com/Ryu-134/AlgoRacer.git)
     cd AlgoRacer
     ```
 
@@ -59,11 +87,7 @@ If you want to modify the code or run it raw:
 
 ---
 
-## 🎮 Controls
-
-> **[PLACEHOLDER: Insert GIF of "Interactive Controls" here]**
-> *Recommendation: Show yourself changing speed, pausing, and opening the Info Sheet.*
-> `![Interactive Demo](assets/demo_interactive.gif)`
+## ⌨️ Master Keybindings Reference
 
 | Key | Action |
 | :--- | :--- |
@@ -74,8 +98,10 @@ If you want to modify the code or run it raw:
 | **S** | Toggle Sound (Mute/Unmute) |
 | **I** | Toggle Info Sheet (Complexities & Notes) |
 | **+/-** | Increase / Decrease Speed (Exponential) |
-| **Arrows** | Adjust Array Size (Fine tuning) |
-| **Shift/Ctrl** | Hold with Arrows for larger increments (±100, ±1000) |
+| **Arrows** | Adjust Array Size (±10) |
+| **Shift + Arrows** | Adjust Array Size (±100) |
+| **Ctrl + Arrows** | Adjust Array Size (±1000) |
+| **Left / Right** | Cycle Algorithm (Single Mode) |
 
 ---
 
@@ -99,10 +125,6 @@ def bubble_sort(arr):
 ### 2. Procedural Sound Generation
 
 We avoid loading hundreds of `.wav` files by synthesizing audio on the fly using `NumPy`. This ensures low memory usage and infinite pitch granularity.
-
-> **[PLACEHOLDER: Insert GIF of "Themes & Green Sweep" here]**
-> *Recommendation: Show toggling 'T' for Light Mode and the green finish animation.*
-> `![Theme Demo](assets/demo_theme.gif)`
 
 ---
 
@@ -131,9 +153,9 @@ This project includes a comprehensive suite of algorithms to demonstrate various
 
 ---
 
-📂 Project Structure
-Plaintext
+## 📂 Project Structure
 
+```text
 AlgoRacer/
 ├── assets/              # GIFs and Images for documentation
 ├── main.py              # Entry point and Event Loop
@@ -143,6 +165,9 @@ AlgoRacer/
 ├── settings.py          # Configuration constants and Themes
 └── requirements.txt     # Project dependencies
 
+```
+
 ---
 
 *Created by Casey Dane - 2025*
+
