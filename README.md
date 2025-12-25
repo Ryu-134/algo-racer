@@ -15,7 +15,7 @@
 
   <br>
   
-  <img src="assets/demo_intro.gif" width="85%">
+  <img src="assets/demo_intro.gif" width="80%">
 </div>
 
 ---
@@ -26,7 +26,7 @@
 Run up to 16 algorithms concurrently on a 4x4 grid to compare efficiency visually. 
 
 <div align="center">
-  <img src="assets/demo_all.gif" width="85%">
+  <img src="assets/demo_all.gif" width="80%">
 </div>
 
 ### Auditory Feedback Engine
@@ -44,22 +44,20 @@ AlgoRacer offers granular control over the visualization environment.
 
 ### 1. Dynamic Speed Control
 Adjust execution speed in real-time using exponential scaling. 
-This allows you to slow down for critical swaps or speed up to finish long runs.
 * **Keys:** `+` (Increase) / `-` (Decrease)
 
 <div align="center">
-  <img src="assets/demo_speed.gif" width="85%">
+  <img src="assets/demo_speed.gif" width="80%">
 </div>
 
 ### 2. Array Size Manipulation
 Dynamically resize the dataset. 
-Use modifiers to jump between fine-tuning and massive stress testing.
 * **Fine Tune:** `Arrow Keys` (±10)
 * **Fast Tune:** `Shift + Arrows` (±100)
 * **Turbo Tune:** `Ctrl + Arrows` (±1000)
 
 <div align="center">
-  <img src="assets/demo_size.gif" width="85%">
+  <img src="assets/demo_size.gif" width="80%">
 </div>
 
 ### 3. General Management
@@ -154,22 +152,22 @@ This project includes a comprehensive suite of algorithms to demonstrate various
 
 | Algorithm | Best | Average | Worst | Stable? |
 | --- | --- | --- | --- | --- |
-| **Tim Sort** | O(n) | O(n log n) | O(n log n) | ✅ |
 | **Quick Sort** | O(n log n) | O(n log n) | O(n²) | ❌ |
 | **Merge Sort** | O(n log n) | O(n log n) | O(n log n) | ✅ |
+| **Tim Sort** | O(n) | O(n log n) | O(n log n) | ✅ |
 | **Heap Sort** | O(n log n) | O(n log n) | O(n log n) | ❌ |
 | **Bubble Sort** | O(n) | O(n²) | O(n²) | ✅ |
 | **Insertion Sort** | O(n) | O(n²) | O(n²) | ✅ |
 | **Selection Sort** | O(n²) | O(n²) | O(n²) | ❌ |
+| **Radix Sort** | O(nk) | O(nk) | O(nk) | ✅ |
+| **Bucket Sort** | O(n+k) | O(n+k) | O(n²) | ✅ |
+| **Counting Sort** | O(n+k) | O(n+k) | O(n+k) | ✅ |
+| **Shell Sort** | O(n log n) | O(n⁴/³) | O(n²) | ❌ |
 | **Cocktail Shaker** | O(n) | O(n²) | O(n²) | ✅ |
 | **Comb Sort** | O(n log n) | O(n²) | O(n²) | ❌ |
-| **Shell Sort** | O(n log n) | O(n⁴/³) | O(n²) | ❌ |
 | **Gnome Sort** | O(n) | O(n²) | O(n²) | ✅ |
 | **Odd-Even Sort** | O(n) | O(n²) | O(n²) | ✅ |
 | **Stooge Sort** | O(n^2.7) | O(n^2.7) | O(n^2.7) | ❌ |
-| **Counting Sort** | O(n+k) | O(n+k) | O(n+k) | ✅ |
-| **Bucket Sort** | O(n+k) | O(n+k) | O(n²) | ✅ |
-| **Radix Sort** | O(nk) | O(nk) | O(nk) | ✅ |
 
 ---
 
@@ -190,4 +188,3 @@ AlgoRacer/
 ---
 
 *Created by Casey Dane - 2025*
-
