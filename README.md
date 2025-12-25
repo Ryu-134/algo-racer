@@ -1,6 +1,7 @@
 <div align="center">
-  <img src="assets/logo.png">
-  
+  <img src="assets/logo.png" width="70%"> 
+  <br><br>
+
   <p>
     <img src="https://img.shields.io/badge/Python-3.9%2B-blue" alt="Python">
     <img src="https://img.shields.io/badge/Pygame-2.5-green" alt="Pygame">
@@ -8,30 +9,30 @@
     <img src="https://img.shields.io/badge/License-MIT-lightgrey" alt="License">
   </p>
   
-  <h3><b>Advanced Sorting Visualizer: Comparative Benchmarking & Auditory Feedback</b></h3>
+  <p>
+    <b>AlgoRacer</b> is an interactive, multi-sensory educational tool designed to demystify sorting algorithms through comparative benchmarking & Auditory Feedback.
+  </p>
+
+  <br>
+  
+  <img src="assets/demo_intro.gif" width="85%">
 </div>
-
-<br>
-**AlgoRacer** is an interactive, multi-sensory educational tool designed to demystify sorting algorithms. 
-
----
-
-![Intro Demo](assets/demo_intro.gif)
 
 ---
 
 ## Key Features
 
 #### Race Mode (Grid View)
-Run up to 16 algorithms concurrently on a 4x4 grid to compare efficiency visually. 
+Run up to 16 algorithms concurrently on a 4x4 grid to compare efficiency visually. This highlights the massive performance difference between $O(n^2)$ and $O(n \log n)$ algorithms in real-time.
 
-![Race Mode Demo](assets/demo_all.gif)
+<div align="center">
+  <img src="assets/demo_all.gif" width="85%">
+</div>
 
 #### Auditory Feedback Engine
-Uses `NumPy` to generate procedural sine waves. 
-The pitch corresponds to the element's value—sorted arrays "sing," while random arrays sound like static.
+Uses `NumPy` to generate procedural sine waves. The pitch corresponds to the element's value—sorted arrays "sing," while random arrays sound like static.
 
-#### Educational Overlay
+### Educational Overlay
 Built-in "Cheat Sheet" pop-up detailing Time/Space Complexity, Stability, and Use Cases for every algorithm.
 
 ---
@@ -41,20 +42,22 @@ Built-in "Cheat Sheet" pop-up detailing Time/Space Complexity, Stability, and Us
 AlgoRacer offers granular control over the visualization environment.
 
 #### 1. Dynamic Speed Control
-Adjust execution speed in real-time using exponential scaling. 
-This allows you to slow down for critical swaps or speed up to finish long runs.
+Adjust execution speed in real-time using exponential scaling. This allows you to slow down for critical swaps or speed up to finish long runs.
 * **Keys:** `+` (Increase) / `-` (Decrease)
 
-![Speed Control Demo](assets/demo_speed.gif)
+<div align="center">
+  <img src="assets/demo_speed.gif" width="85%">
+</div>
 
 #### 2. Array Size Manipulation
-Dynamically resize the dataset. 
-Use modifiers to jump between fine-tuning and massive stress testing.
+Dynamically resize the dataset. Use modifiers to jump between fine-tuning and massive stress testing.
 * **Fine Tune:** `Arrow Keys` (±10)
 * **Fast Tune:** `Shift + Arrows` (±100)
 * **Turbo Tune:** `Ctrl + Arrows` (±1000)
 
-![Size Control Demo](assets/demo_size.gif)
+<div align="center">
+  <img src="assets/demo_size.gif" width="85%">
+</div>
 
 #### 3. General Management
 Full control over the simulation state including themes, audio, and resetting.
@@ -64,7 +67,9 @@ Full control over the simulation state including themes, audio, and resetting.
 * **S:** Mute/Unmute
 * **I:** Info Sheet
 
-![General Controls Demo](assets/demo_controls.gif)
+<div align="center">
+  <img src="assets/demo_controls.gif" width="85%">
+</div>
 
 ---
 
