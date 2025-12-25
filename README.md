@@ -24,7 +24,6 @@
 
 #### Race Mode (Grid View)
 Run up to 16 algorithms concurrently on a 4x4 grid to compare efficiency visually. 
-This highlights the massive performance difference between $O(n^2)$ and $O(n \log n)$ algorithms in real-time.
 
 <div align="center">
   <img src="assets/demo_all.gif" width="85%">
@@ -32,7 +31,7 @@ This highlights the massive performance difference between $O(n^2)$ and $O(n \lo
 
 #### Auditory Feedback Engine
 Uses `NumPy` to generate procedural sine waves. 
-The pitch corresponds to the element's value—sorted arrays "sing," while random arrays sound like static.
+The pitch corresponds to the element's value; sorted arrays "sing," while random arrays sound like static.
 
 ### Educational Overlay
 Built-in "Cheat Sheet" pop-up detailing Time/Space Complexity, Stability, and Use Cases for every algorithm.
@@ -53,7 +52,8 @@ This allows you to slow down for critical swaps or speed up to finish long runs.
 </div>
 
 #### 2. Array Size Manipulation
-Dynamically resize the dataset. Use modifiers to jump between fine-tuning and massive stress testing.
+Dynamically resize the dataset. 
+Use modifiers to jump between fine-tuning and massive stress testing.
 * **Fine Tune:** `Arrow Keys` (±10)
 * **Fast Tune:** `Shift + Arrows` (±100)
 * **Turbo Tune:** `Ctrl + Arrows` (±1000)
@@ -144,8 +144,7 @@ def bubble_sort(arr):
 
 #### 2. Procedural Sound Generation
 
-Avoid loading hundreds of `.wav` files by synthesizing audio on the fly using `NumPy`. 
-This ensures low memory usage and infinite pitch granularity.
+Avoid loading hundreds of `.wav` files by synthesizing audio on the fly using `NumPy` to ensures low memory usage & infinite pitch granularity.
 
 ---
 
