@@ -3,10 +3,10 @@
   <br><br>
 
   <p>
-    <img src="https://img.shields.io/badge/Python-3.9%2B-blue" alt="Python">
-    <img src="https://img.shields.io/badge/Pygame-2.5-green" alt="Pygame">
-    <img src="https://img.shields.io/badge/NumPy-Sound_Engine-orange" alt="NumPy">
-    <img src="https://img.shields.io/badge/License-MIT-lightgrey" alt="License">
+    <img src="https://img.shields.io/badge/Python-3.9%2B-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+    <img src="https://img.shields.io/badge/Pygame-2.5-green?style=for-the-badge" alt="Pygame">
+    <img src="https://img.shields.io/badge/NumPy-Sound_Engine-orange?style=for-the-badge" alt="NumPy">
+    <img src="https://img.shields.io/badge/License-MIT-purple?style=for-the-badge" alt="License">
   </p>
   
   <p>
