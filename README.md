@@ -89,7 +89,7 @@ If you want to modify the code or run it raw:
 
 1.  **Clone the Repository**
     ```bash
-    git clone [https://github.com/Ryu-134/AlgoRacer.git](https://github.com/Ryu-134/AlgoRacer.git)
+    git clone https://github.com/Ryu-134/AlgoRacer.git
     cd AlgoRacer
     ```
 
